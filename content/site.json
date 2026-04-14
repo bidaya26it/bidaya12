@@ -1,0 +1,409 @@
+{
+  "site": {
+    "title": "Bidaya",
+    "footer_text": "Bidaya — Start your journey!",
+    "section_order": [
+      "hero",
+      "pricing",
+      "about",
+      "mission_vision",
+      "team",
+      "why",
+      "faqs",
+      "contact"
+    ]
+  },
+  "header": {
+    "logo": {
+      "src": "assets/logo.png",
+      "alt": "Bidaya logo",
+      "href": "#home"
+    },
+    "nav_links": [
+      {
+        "label": "HOME",
+        "href": "#home"
+      },
+      {
+        "label": "About Us",
+        "href": "#about"
+      },
+      {
+        "label": "Meet the Team",
+        "href": "#team"
+      },
+      {
+        "label": "Why Bidaya",
+        "href": "#why"
+      },
+      {
+        "label": "FAQs",
+        "href": "#faqs"
+      },
+      {
+        "label": "Contact Us",
+        "href": "#contact"
+      }
+    ],
+    "cta": {
+      "label": "Start your journey!",
+      "href": "#pricing",
+      "icon": "🧩",
+      "arrow": "→"
+    }
+  },
+  "hero": {
+    "id": "home",
+    "enabled": true,
+    "title_lines": [
+      [
+        {
+          "text": "Find",
+          "class": "c1"
+        },
+        {
+          "text": "Your Path.",
+          "class": "c2"
+        }
+      ],
+      [
+        {
+          "text": "Build",
+          "class": "c3"
+        },
+        {
+          "text": "Your Future.",
+          "class": "c4"
+        }
+      ]
+    ],
+    "description": "Bidaya helps young people connect their everyday interests with their future occupations by guiding them on a meticulous journey of self-discovery...",
+    "primary_button": {
+      "label": "Start your journey!",
+      "href": "#pricing",
+      "icon": "🧩",
+      "arrow": "→"
+    },
+    "secondary_button": {
+      "label": "Learn More",
+      "href": "#about",
+      "icon": "▷"
+    },
+    "mini_team": {
+      "avatars": [
+        "assets/avatar1.png",
+        "assets/avatar2.png",
+        "assets/avatar3.png"
+      ],
+      "sparkle": "✨",
+      "text": "Meet the people behind your journey!"
+    },
+    "stats": [
+      {
+        "icon": "assets/icon1.png",
+        "value": "3000+",
+        "label": "Users Guided"
+      },
+      {
+        "icon": "assets/icon2.png",
+        "value": "600+",
+        "label": "Opportunities"
+      },
+      {
+        "icon": "assets/icon3.png",
+        "value": "50+",
+        "label": "Skills Improved"
+      }
+    ],
+    "image": {
+      "src": "assets/hero-full.png",
+      "alt": ""
+    }
+  },
+  "pricing": {
+    "id": "pricing",
+    "enabled": true,
+    "plans": [
+      {
+        "card_class": "card-align",
+        "price": "39 AED",
+        "price_sub": "/ MONTH",
+        "title": "Unlock Align",
+        "features": [
+          "Multi-layer Blueprint with layers unlocked gradually",
+          "Adaptive Daily Prompts based on user behavior",
+          "Personalized life and career experience suggestions",
+          "Full Compass System",
+          "AI powered To-Do Breakdown",
+          "Milestone and Bucket-List Timeline",
+          "Certificate of Completion",
+          "Full search Filters",
+          "Community Hub access",
+          "Priority personalization for accessibility needs"
+        ],
+        "button_label": "Unlock Align"
+      },
+      {
+        "card_class": "card-free",
+        "price": "0 AED",
+        "price_sub": "/ MONTH",
+        "title": "Get Started",
+        "features": [
+          "Basic Life Blueprint (limited layers)",
+          "Daily Prompt (1 per day, skippable)",
+          "Limited Search access",
+          "Basic evolving profile",
+          "Accessibility options"
+        ],
+        "button_label": "Get Started"
+      },
+      {
+        "card_class": "card-evolve",
+        "price": "79 AED",
+        "price_sub": "/ MONTH",
+        "title": "Unlock Evolve",
+        "features": [
+          "All of the Align Features",
+          "Advanced AI guidance and deeper reflections",
+          "Career pattern recognition and long-term insight modeling",
+          "Priority access to exclusive opportunities",
+          "Mentor-led community sessions",
+          "Advanced progress analytics and insights",
+          "Exportable CV and experience portfolio",
+          "Early access to new features",
+          "Institutional reporting for sponsored users"
+        ],
+        "button_label": "Unlock Evolve"
+      }
+    ]
+  },
+  "about": {
+    "id": "about",
+    "enabled": true,
+    "title_image": {
+      "src": "assets/about-title.png",
+      "alt": "About Us"
+    },
+    "story_cards": [
+      {
+        "size_class": "about-text-card-large",
+        "text": "Our story began one summer: when our founder, a junior high-school student, was searching for internships but seemed to find the process to be confusing and unclear. Many platforms lacked reliable information, and for students new to this space, finding opportunities felt overwhelming.",
+        "image": "assets/about_laptop.png",
+        "image_class": "about-inline-art-laptop"
+      },
+      {
+        "size_class": "about-text-card-large",
+        "text": "That moment led to a bigger realization: young people aren’t lost because they lack potential, but because they lack guidance, real experiences, and a safe space to explore.\nThe problem was never ability, it was guidance",
+        "image": "assets/about_man.png",
+        "image_class": "about-inline-art-man"
+      },
+      {
+        "size_class": "about-text-card-medium",
+        "text": "So, Bidaya was created to bridge that gap by connecting personal growth with real-world opportunities in one simple platform. Today, we help students turn small steps into a clear path toward purpose, education, and career.",
+        "image": "assets/about_trophy.png",
+        "image_class": "about-inline-art-trophy"
+      }
+    ],
+    "subtitle_prefix": "What is",
+    "subtitle_logo": {
+      "src": "assets/bidaya-title.png",
+      "alt": "Bidaya"
+    },
+    "subtitle_suffix": "?",
+    "definition_text": "Bidaya is an all-in-one, globally accessible career guidance platform that empowers students to explore their path and take control of their future—guiding them from early exploration to final application through personalized support, integrated tools, and a seamless, interactive experience."
+  },
+  "mission_vision": {
+    "id": "mission_vision",
+    "enabled": true,
+    "mission_title": "Our Mission",
+    "mission_text": "To transform uncertainty into clarity by guiding the youth to discover their purpose in the real world and equip them with the confidence, knowledge, and direction to shape their own path every step along the way.",
+    "vision_title": "Our Vision",
+    "vision_text": "To be able to reach young people all over the world and to become the guiding compass that leads them through a journey of self and career discovery. We strive to make every step they take a stride towards their future, helping them take every opportunity and every chance to find their purpose, build their career, and leave their mark.",
+    "values_title": "Our Values",
+    "values": [
+      {
+        "src": "assets/value_people.png",
+        "alt": "People First"
+      },
+      {
+        "src": "assets/value_purpose.png",
+        "alt": "Purpose-Driven"
+      },
+      {
+        "src": "assets/value_impact.png",
+        "alt": "Impact"
+      },
+      {
+        "src": "assets/value_innovation.png",
+        "alt": "Innovation"
+      },
+      {
+        "src": "assets/value_empowerment.png",
+        "alt": "Empowerment"
+      },
+      {
+        "src": "assets/value_collaboration.png",
+        "alt": "Collaboration"
+      },
+      {
+        "src": "assets/value_commitment.png",
+        "alt": "Commitment"
+      },
+      {
+        "src": "assets/value_growth.png",
+        "alt": "Growth"
+      }
+    ],
+    "who_title": "Who do we serve?",
+    "who_text": "Our app aims to serve young individuals aged 12-25 who are searching for a purpose and want to match their career aspirations with their passions. By offering structured advice and sensory-friendly routines, we specifically serve neurodivergent people, such as those with ADHD, autism, or dyslexia.",
+    "who_image": {
+      "src": "assets/who_serve_illustration.png",
+      "alt": "Who we serve illustration"
+    }
+  },
+  "team": {
+    "id": "team",
+    "enabled": true,
+    "image": {
+      "src": "assets/team_full.png",
+      "alt": "Meet the Team"
+    }
+  },
+  "why": {
+    "id": "why",
+    "enabled": true,
+    "blocks": [
+      {
+        "title": "WHY BIDAYA?",
+        "subtitle": "For Individuals",
+        "sparkle": "✦",
+        "paragraphs": [
+          "Bidaya is the right place for any young individual who is trying to discover themselves and shape their future, helping them uncover their passions and the careers that align with them, all through a fun, simple, and personalized journey.",
+          "Bidaya gives you a comfortable and easy way to understand your passions and strengths, while guiding you with real opportunities, insights, and steps that actually make sense for where you are in life. You don't have to have it all figured out to start, and you don't have to do it alone. We help you make progress at your own pace, in a way that feels natural and empowering, not overwhelming or out of reach.",
+          "Bidaya is there to support you when you want to take a chance, choose a path, or simply understand yourself better, helping you become who you really want to be and giving you the tools and confidence to proceed. With Bidaya, your future is defined by purpose."
+        ],
+        "contact_note_icon": "assets/sales-icon.png",
+        "contact_note_alt": "Sales icon",
+        "contact_note_text": "For more information, contact our Sales team through their email.",
+        "email": "Bidaya26.Sales@gmail.com",
+        "email_cta": "Send Email",
+        "email_icon": "assets/email-icon.png",
+        "email_outline_icon": "assets/email-outline-icon.png"
+      },
+      {
+        "title": "WHY BIDAYA?",
+        "subtitle": "For Institutions",
+        "sparkle": "✦",
+        "paragraphs": [
+          "Bidaya is the perfect companion for every institution, big or small, that values constantly assessing, monitoring, and finding ways to improve its students' progress, academically, professionally, and even personally.",
+          "Bidaya will offer you the ability to monitor their progress by giving you constant analytics, providing you with all you need to know regarding your students' engagement with the platform, from dashboards to individual student profiles. Every feature Bidaya offers helps give your students a push towards a passion-focused successful future, all under your watch.",
+          "That helps your institution detect and fill the gaps you might find in your students' journey, and fill them by offering the right courses, internships, events or any opportunity you deem suitable, all showcased in our platform and helping you reach the right audience, and making your institution's vision come to life beside ours."
+        ],
+        "contact_note_icon": "assets/pr-icon.png",
+        "contact_note_alt": "PR icon",
+        "contact_note_text": "For more information, contact our Public Relations team through their email.",
+        "email": "bidaya26.pr@gmail.com",
+        "email_cta": "Send Email",
+        "email_icon": "assets/email-icon.png",
+        "email_outline_icon": "assets/email-outline-icon.png"
+      }
+    ]
+  },
+  "faqs": {
+    "id": "faqs",
+    "enabled": true,
+    "background_shape": "assets/faq_bg_shape.png",
+    "left_question_image": "assets/faq_left_question.png",
+    "right_question_image": "assets/faq_right_question.png",
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to common questions about Bidaya.",
+    "items": [
+      {
+        "question": "Is Bidaya Free?",
+        "answer": "Bidaya has some free features, and other features are reserved for paid plans.",
+        "open": true
+      },
+      {
+        "question": "Can I sign up without an institution?",
+        "answer": "Yes, you can sign up as an individual without a school or a university, giving you access.",
+        "open": false
+      },
+      {
+        "question": "How do I sign up for an experience?",
+        "answer": "While browsing through the suggested experiences, click on the experience you're interested in. After clicking on it, you will get details on how to sign up.",
+        "open": false
+      },
+      {
+        "question": "Is the app available on the App Store?",
+        "answer": "Yes, Bidaya is available as a mobile app.",
+        "open": false
+      },
+      {
+        "question": "How is Bidaya different from other platforms?",
+        "answer": "Bidaya lacks the stress that other “purpose-finding” apps cause, as Bidaya is less of a time-precise planner and more of a convenient, personalized helper.",
+        "open": false
+      },
+      {
+        "question": "Can I use Bidaya if I don’t know what career I want to pursue?",
+        "answer": "Yes, Bidaya was made to help those who are unsure about their future find something they want to pursue. Bidaya's purpose is to help you solve that issue.",
+        "open": false
+      },
+      {
+        "question": "What kind of opportunities does Bidaya offer?",
+        "answer": "Bidaya offers a wide range of opportunities like internships, volunteering, events, courses, competitions, workshops, and many more.",
+        "open": false
+      }
+    ],
+    "form_note": "Didn’t find your question? Feel free to ask us for more information.",
+    "input_placeholder": "My Question is……..",
+    "submit_label": "Submit",
+    "side_image": "assets/faq_graphic.png"
+  },
+  "contact": {
+    "id": "contact",
+    "enabled": true,
+    "title": "Contact Us",
+    "sparkle_image": "assets/contact-sparkle.png",
+    "top_note_prefix": "We’re here to",
+    "top_note_highlight": "help you every step of the way.",
+    "subtext": "Have questions or need guidance? Reach out to us anytime, we’d love to hear from you.",
+    "cards": [
+      {
+        "title": "Instagram",
+        "handle": "@bidaya.26",
+        "button_label": "Visit Instagram",
+        "button_url": "https://instagram.com/bidaya.26",
+        "card_type": "filled",
+        "icon": "assets/contact-instagram-icon.png",
+        "icon_alt": "Instagram icon"
+      },
+      {
+        "title": "Email",
+        "handle": "support.bidaya@gmail.com",
+        "button_label": "Send Email",
+        "button_url": "mailto:support.bidaya@gmail.com",
+        "card_type": "outline",
+        "icon": "assets/contact-email-icon.png",
+        "icon_alt": "Email icon"
+      }
+    ],
+    "bottom_pill": [
+      {
+        "text": "Your",
+        "class": "pill-blue"
+      },
+      {
+        "text": "Future",
+        "class": "pill-gold"
+      },
+      {
+        "text": "Defined by",
+        "class": "pill-blue"
+      },
+      {
+        "text": "Purpose",
+        "class": "pill-gold"
+      }
+    ]
+  }
+}

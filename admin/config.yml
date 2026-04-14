@@ -1,0 +1,307 @@
+
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+
+media_folder: "assets"
+public_folder: "/assets"
+
+site_url: "/"
+display_url: "/"
+
+collections:
+  - name: "site"
+    label: "Site Content"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "content"
+        label: "Bidaya Content"
+        file: "content/site.json"
+        format: "json"
+        fields:
+          - label: "Site Settings"
+            name: "site"
+            widget: "object"
+            fields:
+              - {label: "Site Title", name: "title", widget: "string"}
+              - {label: "Footer Text", name: "footer_text", widget: "string"}
+              - label: "Section Order"
+                name: "section_order"
+                widget: "list"
+                summary: "{{fields.section}}"
+                field:
+                  label: "Section"
+                  name: "section"
+                  widget: "select"
+                  options:
+                    - hero
+                    - pricing
+                    - about
+                    - mission_vision
+                    - team
+                    - why
+                    - faqs
+                    - contact
+
+          - label: "Header"
+            name: "header"
+            widget: "object"
+            fields:
+              - label: "Logo"
+                name: "logo"
+                widget: "object"
+                fields:
+                  - {label: "Image", name: "src", widget: "image"}
+                  - {label: "Alt", name: "alt", widget: "string"}
+                  - {label: "Link", name: "href", widget: "string"}
+              - label: "Navigation Links"
+                name: "nav_links"
+                widget: "list"
+                summary: "{{fields.label}} → {{fields.href}}"
+                fields:
+                  - {label: "Label", name: "label", widget: "string"}
+                  - {label: "Href", name: "href", widget: "string"}
+              - label: "Header CTA"
+                name: "cta"
+                widget: "object"
+                fields:
+                  - {label: "Label", name: "label", widget: "string"}
+                  - {label: "Href", name: "href", widget: "string"}
+                  - {label: "Icon", name: "icon", widget: "string"}
+                  - {label: "Arrow", name: "arrow", widget: "string"}
+
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Enabled", name: "enabled", widget: "boolean", default: true}
+              - {label: "Section ID", name: "id", widget: "string"}
+              - label: "Title Lines"
+                name: "title_lines"
+                widget: "list"
+                summary: "Line"
+                field:
+                  label: "Line Parts"
+                  name: "line"
+                  widget: "list"
+                  summary: "{{fields.text}}"
+                  fields:
+                    - {label: "Text", name: "text", widget: "string"}
+                    - {label: "Color Class", name: "class", widget: "select", options: ["c1","c2","c3","c4"]}
+              - {label: "Description", name: "description", widget: "text"}
+              - label: "Primary Button"
+                name: "primary_button"
+                widget: "object"
+                fields:
+                  - {label: "Label", name: "label", widget: "string"}
+                  - {label: "Href", name: "href", widget: "string"}
+                  - {label: "Icon", name: "icon", widget: "string"}
+                  - {label: "Arrow", name: "arrow", widget: "string"}
+              - label: "Secondary Button"
+                name: "secondary_button"
+                widget: "object"
+                fields:
+                  - {label: "Label", name: "label", widget: "string"}
+                  - {label: "Href", name: "href", widget: "string"}
+                  - {label: "Icon", name: "icon", widget: "string"}
+              - label: "Mini Team"
+                name: "mini_team"
+                widget: "object"
+                fields:
+                  - label: "Avatars"
+                    name: "avatars"
+                    widget: "list"
+                    field: {label: "Avatar", name: "avatar", widget: "image"}
+                  - {label: "Sparkle", name: "sparkle", widget: "string"}
+                  - {label: "Text", name: "text", widget: "string"}
+              - label: "Stats"
+                name: "stats"
+                widget: "list"
+                summary: "{{fields.value}} {{fields.label}}"
+                fields:
+                  - {label: "Icon", name: "icon", widget: "image"}
+                  - {label: "Value", name: "value", widget: "string"}
+                  - {label: "Label", name: "label", widget: "string"}
+              - label: "Hero Image"
+                name: "image"
+                widget: "object"
+                fields:
+                  - {label: "Image", name: "src", widget: "image"}
+                  - {label: "Alt", name: "alt", widget: "string", required: false}
+
+          - label: "Pricing"
+            name: "pricing"
+            widget: "object"
+            fields:
+              - {label: "Enabled", name: "enabled", widget: "boolean", default: true}
+              - {label: "Section ID", name: "id", widget: "string"}
+              - label: "Plans"
+                name: "plans"
+                widget: "list"
+                summary: "{{fields.title}}"
+                fields:
+                  - {label: "Card Class", name: "card_class", widget: "string"}
+                  - {label: "Price", name: "price", widget: "string"}
+                  - {label: "Price Subtext", name: "price_sub", widget: "string"}
+                  - {label: "Title", name: "title", widget: "string"}
+                  - label: "Features"
+                    name: "features"
+                    widget: "list"
+                    field: {label: "Feature", name: "feature", widget: "string"}
+                  - {label: "Button Label", name: "button_label", widget: "string"}
+
+          - label: "About"
+            name: "about"
+            widget: "object"
+            fields:
+              - {label: "Enabled", name: "enabled", widget: "boolean", default: true}
+              - {label: "Section ID", name: "id", widget: "string"}
+              - label: "Title Image"
+                name: "title_image"
+                widget: "object"
+                fields:
+                  - {label: "Image", name: "src", widget: "image"}
+                  - {label: "Alt", name: "alt", widget: "string"}
+              - label: "Story Cards"
+                name: "story_cards"
+                widget: "list"
+                summary: "{{fields.text}}"
+                fields:
+                  - {label: "Size Class", name: "size_class", widget: "select", options: ["about-text-card-large","about-text-card-medium"]}
+                  - {label: "Text", name: "text", widget: "text"}
+                  - {label: "Image", name: "image", widget: "image"}
+                  - {label: "Image Class", name: "image_class", widget: "select", options: ["about-inline-art-laptop","about-inline-art-man","about-inline-art-trophy"]}
+              - {label: "Subtitle Prefix", name: "subtitle_prefix", widget: "string"}
+              - label: "Subtitle Logo"
+                name: "subtitle_logo"
+                widget: "object"
+                fields:
+                  - {label: "Image", name: "src", widget: "image"}
+                  - {label: "Alt", name: "alt", widget: "string"}
+              - {label: "Subtitle Suffix", name: "subtitle_suffix", widget: "string"}
+              - {label: "Definition Text", name: "definition_text", widget: "text"}
+
+          - label: "Mission, Vision, Values"
+            name: "mission_vision"
+            widget: "object"
+            fields:
+              - {label: "Enabled", name: "enabled", widget: "boolean", default: true}
+              - {label: "Section ID", name: "id", widget: "string"}
+              - {label: "Mission Title", name: "mission_title", widget: "string"}
+              - {label: "Mission Text", name: "mission_text", widget: "text"}
+              - {label: "Vision Title", name: "vision_title", widget: "string"}
+              - {label: "Vision Text", name: "vision_text", widget: "text"}
+              - {label: "Values Title", name: "values_title", widget: "string"}
+              - label: "Values"
+                name: "values"
+                widget: "list"
+                summary: "{{fields.alt}}"
+                fields:
+                  - {label: "Image", name: "src", widget: "image"}
+                  - {label: "Alt", name: "alt", widget: "string"}
+              - {label: "Who Title", name: "who_title", widget: "string"}
+              - {label: "Who Text", name: "who_text", widget: "text"}
+              - label: "Who Image"
+                name: "who_image"
+                widget: "object"
+                fields:
+                  - {label: "Image", name: "src", widget: "image"}
+                  - {label: "Alt", name: "alt", widget: "string"}
+
+          - label: "Team"
+            name: "team"
+            widget: "object"
+            fields:
+              - {label: "Enabled", name: "enabled", widget: "boolean", default: true}
+              - {label: "Section ID", name: "id", widget: "string"}
+              - label: "Team Image"
+                name: "image"
+                widget: "object"
+                fields:
+                  - {label: "Image", name: "src", widget: "image"}
+                  - {label: "Alt", name: "alt", widget: "string"}
+
+          - label: "Why Bidaya"
+            name: "why"
+            widget: "object"
+            fields:
+              - {label: "Enabled", name: "enabled", widget: "boolean", default: true}
+              - {label: "Section ID", name: "id", widget: "string"}
+              - label: "Blocks"
+                name: "blocks"
+                widget: "list"
+                summary: "{{fields.subtitle}}"
+                fields:
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Subtitle", name: "subtitle", widget: "string"}
+                  - {label: "Sparkle", name: "sparkle", widget: "string"}
+                  - label: "Paragraphs"
+                    name: "paragraphs"
+                    widget: "list"
+                    field: {label: "Paragraph", name: "paragraph", widget: "text"}
+                  - {label: "Contact Icon", name: "contact_note_icon", widget: "image"}
+                  - {label: "Contact Icon Alt", name: "contact_note_alt", widget: "string"}
+                  - {label: "Contact Note Text", name: "contact_note_text", widget: "text"}
+                  - {label: "Email", name: "email", widget: "string"}
+                  - {label: "Email CTA", name: "email_cta", widget: "string"}
+                  - {label: "Email Icon", name: "email_icon", widget: "image"}
+                  - {label: "Email Outline Icon", name: "email_outline_icon", widget: "image"}
+
+          - label: "FAQs"
+            name: "faqs"
+            widget: "object"
+            fields:
+              - {label: "Enabled", name: "enabled", widget: "boolean", default: true}
+              - {label: "Section ID", name: "id", widget: "string"}
+              - {label: "Background Shape", name: "background_shape", widget: "image"}
+              - {label: "Left Question Image", name: "left_question_image", widget: "image"}
+              - {label: "Right Question Image", name: "right_question_image", widget: "image"}
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Subtitle", name: "subtitle", widget: "string"}
+              - label: "FAQ Items"
+                name: "items"
+                widget: "list"
+                summary: "{{fields.question}}"
+                fields:
+                  - {label: "Question", name: "question", widget: "string"}
+                  - {label: "Answer", name: "answer", widget: "text"}
+                  - {label: "Open by Default", name: "open", widget: "boolean", default: false}
+              - {label: "Form Note", name: "form_note", widget: "text"}
+              - {label: "Input Placeholder", name: "input_placeholder", widget: "string"}
+              - {label: "Submit Label", name: "submit_label", widget: "string"}
+              - {label: "Side Image", name: "side_image", widget: "image"}
+
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
+            fields:
+              - {label: "Enabled", name: "enabled", widget: "boolean", default: true}
+              - {label: "Section ID", name: "id", widget: "string"}
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Sparkle Image", name: "sparkle_image", widget: "image"}
+              - {label: "Top Note Prefix", name: "top_note_prefix", widget: "string"}
+              - {label: "Top Note Highlight", name: "top_note_highlight", widget: "string"}
+              - {label: "Subtext", name: "subtext", widget: "text"}
+              - label: "Cards"
+                name: "cards"
+                widget: "list"
+                summary: "{{fields.title}}"
+                fields:
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Handle", name: "handle", widget: "string"}
+                  - {label: "Button Label", name: "button_label", widget: "string"}
+                  - {label: "Button URL", name: "button_url", widget: "string"}
+                  - {label: "Card Type", name: "card_type", widget: "select", options: ["filled","outline"]}
+                  - {label: "Icon", name: "icon", widget: "image"}
+                  - {label: "Icon Alt", name: "icon_alt", widget: "string"}
+              - label: "Bottom Pill"
+                name: "bottom_pill"
+                widget: "list"
+                summary: "{{fields.text}}"
+                fields:
+                  - {label: "Text", name: "text", widget: "string"}
+                  - {label: "Class", name: "class", widget: "select", options: ["pill-blue","pill-gold"]}
